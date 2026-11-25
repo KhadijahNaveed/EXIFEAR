@@ -1,0 +1,26 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "0.1 Initialise Vite + React + TypeScript project and install dependencies": [
+      {
+        "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795624726865
+      }
+    ],
+    "0.2 Create Kiro steering files": [
+      {
+        "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795624733761
+      }
+    ],
+    "0.3 Create Kiro agent hook for TypeScript file saves": [
+      {
+        "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795624742055
+      }
+    ]
+  }
+}

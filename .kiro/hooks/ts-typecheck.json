@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "TypeScript Type Check",
+      "trigger": "PostFileSave",
+      "description": "After saving a .ts or .tsx file, runs tsc --noEmit and reports either \"✓ no type errors\" if the exit code is 0, or the count and locations of type errors found if the exit code is non-zero. Satisfies R14.3 (build must exit 0 with zero TypeScript errors before commit).",
+      "matcher": "\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "tsc --noEmit 2>&1; if ($LASTEXITCODE -eq 0) { Write-Output \"✓ no type errors\" } else { $errors = tsc --noEmit 2>&1; $count = ($errors | Select-String \"error TS\").Count; Write-Output \"✗ $count type error(s) found:\"; $errors | Select-String \"error TS\" | ForEach-Object { Write-Output $_.Line } }",
+        "timeout": 60
+      }
+    }
+  ]
+}

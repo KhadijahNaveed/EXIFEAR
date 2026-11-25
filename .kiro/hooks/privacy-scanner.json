@@ -1,0 +1,16 @@
+﻿{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Privacy Violation Scanner",
+      "description": "After saving a .ts or .tsx file, scans it for accidental fetch() calls, prohibited outbound channels (XMLHttpRequest/sendBeacon/WebSocket), console.error() usage, and bare location declaratives. Reports PASS or a list of violations to stdout. See scripts/privacy-check.js for rule details.",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(ts|tsx)$",
+      "action": {
+        "type": "command",
+        "command": "node scripts/privacy-check.js"
+      },
+      "timeout": 10
+    }
+  ]
+}
