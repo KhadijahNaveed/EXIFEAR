@@ -6,6 +6,11 @@
         "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
         "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
         "timestamp": 1795624726865
+      },
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631197475
       }
     ],
     "0.2 Create Kiro steering files": [
@@ -13,6 +18,11 @@
         "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
         "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
         "timestamp": 1795624733761
+      },
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631201195
       }
     ],
     "0.3 Create Kiro agent hook for TypeScript file saves": [
@@ -20,6 +30,49 @@
         "executionId": "0eb6c810-5a50-4b0a-a051-255abda306ab",
         "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
         "timestamp": 1795624742055
+      },
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631204593
+      }
+    ],
+    "0. Set up project scaffold and Kiro automation": [
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631204713
+      }
+    ],
+    "1. Checkpoint — verify scaffold": [
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631209788
+      }
+    ],
+    "2.1 Define CSS design tokens and global stylesheet": [
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631215757
+      },
+      {
+        "executionId": "39fda53a-bf36-474e-b364-d923a0c8188c",
+        "chatSessionId": "sess_f479d884-b38f-4fb3-bd76-ee5d9289bd32",
+        "timestamp": 1795631327036
+      }
+    ],
+    "2.2 Implement `AppContext` and `SoundContext` providers": [
+      {
+        "executionId": "61cea5f6-2bdd-4ded-b2f4-92f78e7e8292",
+        "chatSessionId": "sess_398d75d1-9c50-49b0-ac4d-4bfd51bacee9",
+        "timestamp": 1795632362587
+      },
+      {
+        "executionId": "61cea5f6-2bdd-4ded-b2f4-92f78e7e8292",
+        "chatSessionId": "sess_398d75d1-9c50-49b0-ac4d-4bfd51bacee9",
+        "timestamp": 1795633242799
       }
     ]
   }

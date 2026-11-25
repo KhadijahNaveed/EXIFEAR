@@ -10,15 +10,15 @@ Build Exifear as a browser-only single-page application using React 18, Vite, an
 
 ### Phase 0 — Foundation
 
-- [ ] 0. Set up project scaffold and Kiro automation
-  - [ ] 0.1 Initialise Vite + React + TypeScript project and install dependencies
+- [x] 0. Set up project scaffold and Kiro automation
+  - [x] 0.1 Initialise Vite + React + TypeScript project and install dependencies
     - Run `npm create vite@latest . -- --template react-ts` in the workspace root
     - Install runtime dependencies: `exifr`, `react-leaflet`, `leaflet`, `leaflet.markercluster`, `fast-check` (dev), `vitest` (dev), `@testing-library/react` (dev), `@playwright/test` (dev)
     - Add `"test": "vitest --run"` and `"build": "vite build"` scripts to `package.json`
     - Verify `vite build` exits with code 0 on a clean scaffold before any feature code is added
     - _Requirements: R14.5_
 
-  - [ ] 0.2 Create Kiro steering files
+  - [x] 0.2 Create Kiro steering files
     - Create `.kiro/steering/architecture.md` covering module boundaries, no-server-call rule, `useReducer`-based state management, and file/folder structure from the design
     - Create `.kiro/steering/visual-identity.md` covering the dark atmospheric palette, horror typography, fog/flashlight effects, and animation specifications
     - Create `.kiro/steering/privacy-security.md` covering the local-only processing rule, no-transmission invariant, OSM tile disclosure requirement, and Canvas cleaning caveat
@@ -26,12 +26,12 @@ Build Exifear as a browser-only single-page application using React 18, Vite, an
     - Each file must contain at least one specific rule statement for its topic
     - _Requirements: R14.2_
 
-  - [ ] 0.3 Create Kiro agent hook for TypeScript file saves
+  - [x] 0.3 Create Kiro agent hook for TypeScript file saves
     - Create a `.kiro/hooks/` hook configuration that fires when a `.ts` or `.tsx` file is saved
     - The hook must run `tsc --noEmit` (or equivalent) and emit a result to stdout indicating either "✓ no type errors" or the count and location of violations found
     - _Requirements: R14.3_
 
-- [ ] 1. Checkpoint — verify scaffold
+- [x] 1. Checkpoint — verify scaffold
   - Ensure `npm run build` exits 0 and `npm test` runs without error. Ask the user if any setup questions arise.
 
 ---
@@ -39,13 +39,13 @@ Build Exifear as a browser-only single-page application using React 18, Vite, an
 ### Phase 1 — Visual Foundation
 
 - [ ] 2. Implement app shell, design tokens, and global styles
-  - [ ] 2.1 Define CSS design tokens and global stylesheet
+  - [x] 2.1 Define CSS design tokens and global stylesheet
     - Create `src/styles/theme.css` with CSS custom properties: deep-black background (`#0a0a0a`), dark-green accent, desaturated-purple secondary, border-radius scale, and typography scale
     - Create `src/styles/global.css` importing `theme.css` and applying base resets
     - Create `src/styles/reduced-motion.css` with a `@media (prefers-reduced-motion: reduce)` block that disables particle animations and all CSS transitions/animations with displacement > 2 px
     - _Requirements: R8.1, R8.8_
 
-  - [ ] 2.2 Implement `AppContext` and `SoundContext` providers
+  - [x] 2.2 Implement `AppContext` and `SoundContext` providers
     - Create `src/types/index.ts` with all shared TypeScript types from the design (`Photo`, `ExtractedMetadata`, `GpsData`, `GpsCluster`, `StoryTemplate`, `StoryResult`, `AiFingerprintResult`, `AppState`, `Action`)
     - Create `src/context/AppContext.tsx` with `useReducer`-based state, all 13 action types, and a typed `useAppContext` hook
     - Create `src/context/SoundContext.tsx` with lazy `AudioContext` creation, master `GainNode` mute control, and named trigger dispatch (`entry_load`, `gps_hover`, `analysis_done`)
